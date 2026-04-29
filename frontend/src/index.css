@@ -1,0 +1,9 @@
+* {
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #020617;
+  color: #f8fafc;
+}

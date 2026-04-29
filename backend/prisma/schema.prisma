@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+/// Part 2 minimal model: two slots per `coupleId` (share ID between partners / tabs).
+model PartnerResponse {
+  id        String   @id @default(cuid())
+  coupleId  String
+  slot      Int
+  text      String
+  createdAt DateTime @default(now())
+
+  @@unique([coupleId, slot])
+}
+
+model Alignment {
+  id        String   @id @default(cuid())
+  coupleId  String   @unique
+  state     String
+  summary   String
+  followup  String
+  createdAt DateTime @default(now())
+}

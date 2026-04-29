@@ -1,0 +1,69 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.sub {
+  margin-top: -8px;
+  color: #cbd5e1;
+}
+
+.card {
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: #0f172a;
+}
+
+.form {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #475569;
+  padding: 10px;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  background: #1d4ed8;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status {
+  padding: 12px;
+  background: #1e293b;
+  border-radius: 8px;
+}
+
+.hint {
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.json {
+  margin-top: 12px;
+  padding: 12px;
+  background: #020617;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  overflow-x: auto;
+  font-size: 0.8rem;
+  text-align: left;
+}
